@@ -1,0 +1,42 @@
+.container {
+  width: 768px;
+}
+
+.hero {
+  background-image: linear-gradient(
+      var(--hero-background),
+      var(--hero-background)
+    ),
+    url(../images/tablet-img/dark-bg-t.jpg);
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--hero-background),
+        var(--hero-background)
+      ),
+      url(../images/tablet-img/dark-bg@2x-t.jpg);
+  }
+}
+
+.hero-title {
+  max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 36px;
+}
+
+/*----------------Why-are-we-section----------------*/
+.why-are-we-list {
+  column-gap: 24px;
+}
+.why-are-we-list-item {
+  flex-basis: calc((100% - 24px) / 2);
+}
+/*----------------TEAM----------------*/
+.team-list {
+  gap: 24px;
+  row-gap: 64px;
+}

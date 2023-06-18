@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-m.css">
+    <link rel="stylesheet" href="./css/styles-t.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./css/styles-d.css" media="screen and (min-width: 1158px)">
     <title>WebStudio</title>
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
                 <a class="header-link link" href="./index.html">Web<span class="header-logo">Studio</span></a>
@@ -41,7 +43,7 @@
                 </ul>
             </address>
         </div>
-    </header>
+    </header> -->
 
     <main>
         <!--Hero-->
@@ -51,7 +53,7 @@
                 <button type="button" class="hero-button" data-modal-open>Order Service</button>
             </div>
         </section>
-        <!--Why are we-->
+        <!-----------------------------------------------Why are we-->
         <section class="why-are-we">
             <div class="container">
                 <h2 class="visually-hidden">Why are we</h2>
@@ -104,27 +106,29 @@
                 </ul>
             </div>
         </section>
-        <!--What are we doing-->
+        <!-----------------------------------------What are we doing-->
         <section class="projects">
             <div class="container">
                 <h2 class="projects-title">What are we doing</h2>
                 <ul class="projects-list list">
-                    <li class="projects-item"><img src="./images/img_1.jpg" alt="develop web application for PC"
-                            width="360"></li>
-                    <li class="projects-item"><img src="./images/img_2.jpg" alt="develop mobile application"
-                            width="360"></li>
-                    <li class="projects-item"><img src="./images/img_3.jpg" alt="functioning mobile application"
-                            width="360"></li>
+                    <li class="projects-item"><img srcset="./images/desktop-img/img_1@2x.jpg 2x"
+                            src="./images/desktop-img/img_1.jpg" alt="develop web application for PC" width="360">
+                    </li>
+                    <li class="projects-item"><img srcset="./images/desktop-img/img_2@2x.jpg 2x"
+                            src="./images/desktop-img/img_2.jpg" alt="develop mobile application" width="360"></li>
+                    <li class="projects-item"><img srcset="./images/desktop-img/img_3@2x.jpg 2x"
+                            src="./images/desktop-img/img_3.jpg" alt="functioning mobile application" width="360"></li>
                 </ul>
             </div>
         </section>
-        <!--Our Team-->
+        <!------------------------------------------------Our Team-->
         <section class="team">
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img src="./images/mark.jpg" alt="Mark`s photo" width="264">
+                        <img srcset="./images/mobile-img/mark@2x.jpg 2x" src="./images/mobile-img/mark.jpg"
+                            alt="Mark`s photo" width="264">
                         <div class="team-list-block">
                             <h3 class="team-list-title">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -152,7 +156,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/tom.jpg" alt="Tom`s photo" width="264">
+                        <img srcset="./images/mobile-img/tom@2x.jpg 2x" src="./images/mobile-img/tom.jpg"
+                            alt="Tom`s photo" width="264">
                         <div class="team-list-block">
                             <h3 class="team-list-title">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -182,7 +187,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/camila.jpg" alt="Camila`s photo" width="264">
+                        <img srcset="./images/mobile-img/camila@2x.jpg 2x" src="./images/mobile-img/camila.jpg"
+                            alt="Camila`s photo" width="264">
                         <div class="team-list-block">
                             <h3 class="team-list-title">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -212,7 +218,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/daniel.jpg" alt="Daniel`s photo" width="264">
+                        <img srcset="./images/mobile-img/daniel@2x.jpg 2x" src="./images/mobile-img/daniel.jpg"
+                            alt="Daniel`s photo" width="264">
                         <div class="team-list-block">
                             <h3 class="team-list-title">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
@@ -244,7 +251,7 @@
                 </ul>
             </div>
         </section>
-        <!--Customers-->
+        <!---------------------------------------------Customers-->
         <section class="customers">
             <div class="container">
                 <h2 class="customers-title">Customers</h2>
@@ -278,7 +285,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer-conteiner container">
             <div class="footer-info-conteiner">
                 <a class="footer-link link" href="./index.html">Web<span class="footer-logo">Studio</span></a>
@@ -326,8 +333,8 @@
                 </form>
             </div>
         </div>
-    </footer>
-    <div class="modal-backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="modal-backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button type="button" class="close-modal-button" data-modal-close><svg class="close-modal-icon" width="8"
                     height="8">
@@ -386,7 +393,7 @@
 
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
