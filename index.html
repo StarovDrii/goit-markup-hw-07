@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
                 <a class="header-link link" href="./index.html">Web<span class="header-logo">Studio</span></a>
@@ -33,6 +33,12 @@
                     <li class="header-navigation-list-item"><a href="" class="header-list-item link">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="burger-btn" data-menu-open>
+                <svg class="burger-icon" width="32">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+
+            </button>
             <address class="header-address">
                 <ul class="header-address-list list">
                     <li class="header-address-list-item"><a class="header-address-item link"
@@ -43,7 +49,7 @@
                 </ul>
             </address>
         </div>
-    </header> -->
+    </header>
 
     <main>
         <!--Hero-->
@@ -53,7 +59,6 @@
                 <button type="button" class="hero-button" data-modal-open>Order Service</button>
             </div>
         </section>
-        <!-----------------------------------------------Why are we-->
         <section class="why-are-we">
             <div class="container">
                 <h2 class="visually-hidden">Why are we</h2>
@@ -106,7 +111,6 @@
                 </ul>
             </div>
         </section>
-        <!-----------------------------------------What are we doing-->
         <section class="projects">
             <div class="container">
                 <h2 class="projects-title">What are we doing</h2>
@@ -121,9 +125,8 @@
                 </ul>
             </div>
         </section>
-        <!------------------------------------------------Our Team-->
         <section class="team">
-            <div class="container">
+            <div class="container team-container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
@@ -251,9 +254,8 @@
                 </ul>
             </div>
         </section>
-        <!---------------------------------------------Customers-->
         <section class="customers">
-            <div class="container">
+            <div class="container customers-container">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="customers-list list">
                     <li class="customers-list-item"><a href="" class="customers-link link" target="_blank"
@@ -285,7 +287,7 @@
         </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-conteiner container">
             <div class="footer-info-conteiner">
                 <a class="footer-link link" href="./index.html">Web<span class="footer-logo">Studio</span></a>
@@ -333,8 +335,9 @@
                 </form>
             </div>
         </div>
-    </footer> -->
-    <!-- <div class="modal-backdrop is-hidden" data-modal>
+    </footer>
+
+    <div class="modal-backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button type="button" class="close-modal-button" data-modal-close><svg class="close-modal-icon" width="8"
                     height="8">
@@ -390,10 +393,55 @@
                 </div>
                 <button type="submit" class="send-modal-button">Send</button>
             </form>
-
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <div class="menu-backdrop is-hidden" data-menu>
+        <div class="menu-window">
+            <button type="button" class="close-menu-btn" data-menu-close>
+                <svg class="close-menu-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-blackdrop"></use>
+                </svg></button>
+            <nav class="menu-navigation">
+                <ul class="menu-navigation-list list">
+                    <li class="menu-navigation-list-item"><a class="menu-list-item current-page-color link"
+                            href="">Studio</a></li>
+                    <li class="menu-navigation-list-item"><a class="menu-list-item link" href="">Portfolio</a></li>
+                    <li class="menu-navigation-list-item"><a class="menu-list-item link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="menu-address">
+                <ul class="menu-address-list list">
+                    <li class="menu-address-list-item">
+                        <a class="menu-address-tel link" href="">
+                            +11 (000)111-11-11</a>
+                    </li>
+                    <li class="menu-address-list-item">
+                        <a class="menu-address-mail link" href="">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="menu-soc-list list">
+                <li class="menu-soc-list-item"><a class="menu-soc-list-link link" href="">
+                        <svg class="menu-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg></a></li>
+                <li class="menu-soc-list-item"><a class="menu-soc-list-link link" href="">
+                        <svg class="menu-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg></a></li>
+                <li class="menu-soc-list-item"><a class="menu-soc-list-link link" href="">
+                        <svg class="menu-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg></a></li>
+                <li class="menu-soc-list-item"><a class="menu-soc-list-link link" href="">
+                        <svg class="menu-soc-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

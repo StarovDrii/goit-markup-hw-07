@@ -5,80 +5,15 @@
 }
 
 /*----------------HEADER----------------*/
-.header {
-  border-bottom: 1px solid var(--accent);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
 .header-link {
-  display: block;
   margin-right: 76px;
-  padding: 24px 0px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-brand);
 }
-.header-logo {
-  color: var(--dark);
-}
-.header-navigation-list {
-  display: flex;
-}
-.header-navigation-list-item {
-  margin-right: 40px;
-}
-.header-navigation-list-item:last-child {
-  margin-right: 0;
-}
-.current-page {
-  position: relative;
-}
-.current-page::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--pressed-state);
-  border-radius: 2px;
-}
-
 .header-list-item {
-  display: block;
-  padding: 24px 0px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--dark);
-
-  transition-property: color;
-  transition-duration: var(--dur);
-  transition-timing-function: var(--func);
 }
-.current-page-color {
+.header-list-item:hover {
   color: var(--pressed-state);
 }
-.header-list-item:hover,
-.header-list-item:focus {
-  color: var(--pressed-state);
-}
-
 .header-address {
   font-style: normal;
   margin-left: auto;
@@ -93,19 +28,12 @@
   margin-right: 0;
 }
 .header-address-item {
-  display: block;
   padding: 24px 0px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text);
-
-  transition-property: color;
-  transition-duration: var(--dur);
-  transition-timing-function: var(--func);
 }
-.header-address-item:hover,
-.header-address-item:focus {
+.header-address-item:hover {
   color: var(--pressed-state);
 }
 /*-------------------------MAIN-----------------------*/
@@ -215,21 +143,17 @@
 }
 
 .customers-list {
-  display: flex;
   gap: 24px;
 }
 .customers-list-item {
-  width: calc((100% - 120px) / 6);
+  flex-basis: calc((100% - 120px) / 6);
   height: 88px;
 }
 .customers-link:hover {
   border-color: var(--pressed-state);
   color: var(--pressed-state);
 }
-/* .customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  color: var(--pressed-state);
-} */
+
 /*----------------PORTFOLIO----------------*/
 .portfolio {
   padding-top: 96px;
@@ -352,336 +276,18 @@
   background-color: var(--dark);
 }
 .footer-conteiner {
-  display: flex;
+  flex-wrap: nowrap;
   align-items: baseline;
 }
 .footer-info-conteiner {
   margin-right: 120px;
 }
-.footer-link {
-  display: inline-block;
-  margin-bottom: 16px;
-  width: 115px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-brand);
-}
-.footer-logo {
-  color: var(--light);
-}
-.footer-text {
-  max-width: 264px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--light);
-}
 .footer-soc-conteiner {
   margin-right: auto;
 }
-.footer-soc-text {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--white-background);
-}
-.footer-socials-list {
-  display: flex;
-  gap: 16px;
-}
-.footer-socials-item {
-  width: 40px;
-  height: 40px;
-}
-.footer-socials-link {
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-brand);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: transparent;
-  transition-property: background-color;
-  transition-duration: var(--dur);
-  transition-timing-function: var(--func);
-}
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-socials-link:hover {
   background-color: var(--success);
 }
-.footer-icons {
-  fill: var(--light);
-}
-
-.form-title {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--white-background);
-}
-.subscribe-form {
-  display: flex;
-  gap: 24px;
-}
-.form-mail-field {
-  background: transparent;
-  width: 264px;
-  height: 40px;
-  padding: 8px 16px;
-  border: 1px solid var(--white-background);
-  border-radius: 4px;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  color: var(--white-background);
-}
-.form-mail-field::placeholder {
-  color: var(--white-background);
-}
-.subscribe-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 165px;
-  height: 40px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--white-background);
-  background-color: var(--primary-brand);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: transparent;
-  transition-property: background-color;
-  transition-duration: var(--dur);
-  transition-timing-function: var(--func);
-}
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-button:hover {
   background-color: var(--success);
-}
-.subscribe-icon {
-  margin-left: 16px;
-  fill: var(--white-background);
-}
-/*-------------------------------------MODAL-----------------*/
-.modal-backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--modal-overlay);
-  transition: opacity var(--dur) var(--func), visibility var(--dur) var(--func);
-}
-.modal-window {
-  width: 408px;
-  min-height: 584px;
-  padding: 72px 24px 24px 24px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform var(--dur) var(--func);
-  background-color: var(--modal-background);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.close-modal-button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  border-radius: 50%;
-  background-color: var(--accent);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  outline: transparent;
-  transition-property: background-color, border;
-  transition-duration: var(--dur);
-  transition-timing-function: var(--func);
-}
-.close-modal-button:hover,
-.close-modal-button:focus {
-  background-color: var(--pressed-state);
-  border: none;
-}
-.close-modal-button:hover .close-modal-icon,
-.close-modal-button:focus .close-modal-icon {
-  fill: var(--white-background);
-}
-.close-modal-icon {
-  fill: var(--dark);
-  transition: fill var(--dur) var(--func);
-}
-.modal-form {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.modal-form-wrap {
-  margin-bottom: 8px;
-}
-.modal-form-mark {
-  display: block;
-  margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  background-color: transparent;
-  color: var(--subtle-text);
-}
-.modal-form-position {
-  position: relative;
-}
-.modal-form-field {
-  width: 360px;
-  height: 40px;
-  padding: 11px 16px 11px 38px;
-  outline: transparent;
-  background-color: transparent;
-  border: 1px solid var(--modal-overlay);
-  border-radius: 4px;
-  transition: border-color var(--dur) var(--func);
-}
-.modal-form-field:focus {
-  border-color: var(--primary-brand);
-}
-.modal-form-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translatey(-50%);
-  fill: var(--dark);
-  background-color: transparent;
-  transition: fill var(--dur) var(--func);
-}
-.modal-form-field:focus + .modal-form-icon {
-  fill: var(--primary-brand);
-}
-.modal-form-title {
-  text-align: center;
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-}
-.modal-form-comment-wrap {
-  margin-bottom: 16px;
-}
-.modal-form-comment-field {
-  width: 360px;
-  height: 120px;
-  resize: none;
-  border: 1px solid var(--modal-overlay);
-  border-radius: 4px;
-  padding: 8px 16px;
-  outline: transparent;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--modal-overlay);
-  background-color: transparent;
-  transition-property: border-color;
-  transition-duration: var(--dur);
-  transition-timing-function: var(--func);
-}
-.modal-form-comment-field:focus {
-  border-color: var(--primary-brand);
-}
-.modal-form-comment-field::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--modal-overlay);
-}
-.modal-privacy-wrap {
-  margin-bottom: 24px;
-}
-
-.privacy-text {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--subtle-text);
-}
-.privacy-icon-wrap {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-  border: 1px solid var(--modal-overlay);
-  border-radius: 2px;
-  background-color: var(--white-background);
-  fill: transparent;
-  transition: background-color var(--dur) var(--func),
-    border var(--dur) var(--func), fill var(--dur) var(--func);
-}
-.privacy-check:checked + .privacy-text > .privacy-icon-wrap {
-  border: none;
-  background-color: var(--pressed-state);
-  fill: var(--light);
-}
-
-.privacy-link {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: var(--primary-brand);
-}
-.send-modal-button {
-  display: block;
-  margin: 0 auto;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--primary-brand);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--white-background);
-  cursor: pointer;
-  outline: transparent;
-
-  transition-property: background-color;
-  transition-duration: var(--dur);
-  transition-timing-function: var(--func);
-}
-.send-modal-button:hover,
-.send-modal-button:focus {
-  background-color: var(--pressed-state);
 }
