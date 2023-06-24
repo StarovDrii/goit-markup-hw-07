@@ -48,6 +48,10 @@
 .header-list-item:focus {
   color: var(--pressed-state);
 }
+.current-page-color {
+  color: var(--pressed-state);
+}
+
 .header-address {
   font-style: normal;
   margin-left: auto;

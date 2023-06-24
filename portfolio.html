@@ -13,29 +13,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-m.css">
+    <link rel="stylesheet" href="./css/styles-t.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./css/styles-d.css" media="screen and (min-width: 1158px)">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <nav class="header-navigation">
                 <a class="header-link link" href="./index.html">Web<span class="header-logo">Studio</span></a>
                 <ul class="header-navigation-list list">
-                    <li class="header-navigation-list-item"><a href="./index.html"
-                            class="header-list-item link">Studio</a></li>
-                    <li class="header-navigation-list-item "><a href="./portfolio.html"
+                    <li class="header-navigation-list-item "><a href="./index.html"
+                            class="header-list-item  link">Studio</a>
+                    </li>
+                    <li class="header-navigation-list-item"><a href="./portfolio.html"
                             class="header-list-item current-page current-page-color link">Portfolio</a></li>
                     <li class="header-navigation-list-item"><a href="" class="header-list-item link">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="burger-btn" data-menu-open>
+                <svg class="burger-icon" width="32">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+
+            </button>
             <address class="header-address">
                 <ul class="header-address-list list">
                     <li class="header-address-list-item"><a class="header-address-item link"
                             href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="header-address-list-item"><a class="header-address-item link"
-                            href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                            href="tel:+110001111111">+11
+                            (000) 111-11-11</a></li>
                 </ul>
             </address>
         </div>
@@ -44,7 +54,7 @@
     <main>
         <section class="portfolio">
             <div class="container">
-                <h1 class="visually-hidden-title">Portfolio</h1>
+                <h1 class="visually-hidden  ">Portfolio</h1>
                 <ul class="filters list">
                     <li class="list-button"><button type="button" class="filters-button">All</button></li>
                     <li class="list-button"><button type="button" class="filters-button">Web Site</button></li>
@@ -56,7 +66,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_1.jpg" alt="project card 1" width="360">
+                                <img src="./images/desktop-img/project_card_1.jpg" alt="project card 1" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -70,7 +80,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_2.jpg" alt="project card 2" width="360">
+                                <img src="./images/desktop-img/project_card_2.jpg" alt="project card 2" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -84,7 +94,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_3.jpg" alt="project card 3" width="360">
+                                <img src="./images/desktop-img/project_card_3.jpg" alt="project card 3" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -98,7 +108,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_4.jpg" alt="project card 4" width="360">
+                                <img src="./images/desktop-img/project_card_4.jpg" alt="project card 4" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -112,7 +122,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_5.jpg" alt="project card 5" width="360">
+                                <img src="./images/desktop-img/project_card_5.jpg" alt="project card 5" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -126,7 +136,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_6.jpg" alt="project card 6" width="360">
+                                <img src="./images/desktop-img/project_card_6.jpg" alt="project card 6" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -140,7 +150,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_7.jpg" alt="project card 7" width="360">
+                                <img src="./images/desktop-img/project_card_7.jpg" alt="project card 7" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -154,7 +164,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_8.jpg" alt="project card 8" width="360">
+                                <img src="./images/desktop-img/project_card_8.jpg" alt="project card 8" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
@@ -168,7 +178,7 @@
                     <li class="project-card-item">
                         <a href="" class="project-card-link link">
                             <div class="project-card-cover">
-                                <img src="./images/project_card_9.jpg" alt="project card 9" width="360">
+                                <img src="./images/desktop-img/project_card_9.jpg" alt="project card 9" width="360">
                                 <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
