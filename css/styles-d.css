@@ -276,14 +276,13 @@
   background-color: var(--dark);
 }
 .footer-conteiner {
-  flex-wrap: nowrap;
   align-items: baseline;
 }
 .footer-info-conteiner {
   margin-right: 120px;
 }
 .footer-soc-conteiner {
-  margin-right: auto;
+  margin-right: 80px;
 }
 .footer-socials-link:hover {
   background-color: var(--success);
